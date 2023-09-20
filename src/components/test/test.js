@@ -1,7 +1,7 @@
 const Test=()=>{
 
 return(
-    <div>Hello! Testing React Application</div>
+    <div>Hello! Testing React Application with current account</div>
 )
 
 }
