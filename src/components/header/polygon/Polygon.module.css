@@ -1,0 +1,10 @@
+.box {
+    height: 18px;
+    width: 220px;
+}
+
+.box .polygon {
+    height: auto;
+    width: 100%;
+}
+
