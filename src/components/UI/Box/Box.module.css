@@ -1,0 +1,12 @@
+.boxContainer{
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
+    border: 1px solid #572e2e;
+    color: white;
+}
+
+button:hover,
+button:active {
+    box-shadow: 0 10px 20px #810404, inset 0 0 0 2px #a80000;
+  color: #ffffff;
+  background: black;
+}
