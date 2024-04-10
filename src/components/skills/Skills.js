@@ -121,6 +121,7 @@ const SKILLS = [
   },
 ];
 const Skills = () => {
+  const boxStyle={height:"10rem",width:"8rem",textAlign:"center"};
   return (
     <>
       <h1 className={`text-center title ${classes.title}`}>Skills</h1>
@@ -134,7 +135,30 @@ const Skills = () => {
             </div>
           </div>
           <div className="col-6">
-            <Box>here is the bix</Box>
+            <div className="row">
+            <div className="col-2"></div>
+            <div className="col-4">
+            <Box style={boxStyle}>
+              <img src="experience.svg" height="50rem" width="30rem" className={classes.boxIcon}></img>
+              <span className={classes.boxTitle}>Experience</span>
+              <hr className={classes.boxLine}></hr>
+              <span className={classes.boxDesc}>2+ Years</span>
+            </Box>
+            </div>
+            <div className="col-5">
+            <Box style={boxStyle}>
+              <img src="projects.svg" height="50rem" width="30rem" className={classes.boxIcon}></img>
+              <span className={classes.boxTitle2}>Projects</span>
+              <hr className={classes.boxLine}></hr>
+              <span className={classes.boxDesc2}>20+ Projects</span>
+            </Box>
+            </div>
+            <div className="col-2"></div>
+            
+            
+            </div>
+            <div className="row" style={{marginTop:"2rem"}}>
+            Got something wrong with your web or want to digitize your business? Worry not ....You are at the right place.A professional developer is looking your way with experience and expertees in both maintaining awesome UIs with collaboration of smart SEO and at the same time handling server side(backend) logic.Want an interaction....? Jump down to interaction section. </div>
           </div>
         </div>
       </div>
