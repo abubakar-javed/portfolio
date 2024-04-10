@@ -11,8 +11,8 @@ li {
 }
 
 body {
-  background-color: black;
   color: white;
+  background-image: url('../public/background3.jpg');
 }
 
 a {
@@ -37,7 +37,7 @@ a:hover {
 
 h2 {
   font-size: 24px;
-  color: red; 
+  color: #AD0C0C; 
 }
 
 p {
@@ -45,23 +45,11 @@ p {
   line-height: 1.5;
 }
 
-.button {
-  background-color: red;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-}
 
-.button:hover {
-  background-color: white;
-  color: red;
-}
 
 footer {
   background-color: black;
   color: white;
-  text-align: center;
   padding: 10px;
 }
 

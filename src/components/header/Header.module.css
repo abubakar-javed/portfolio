@@ -2,7 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(0, 0, 0);     
+    background:tra;     
+    margin-bottom: 7rem;
   }
   
   .leftSide,
