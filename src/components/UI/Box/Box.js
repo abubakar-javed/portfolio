@@ -5,11 +5,11 @@ const Box=(props)=>{
     const {height,width}=props.style;
 
     return(
-        <>
+        
         <div className={`${classes.boxContainer}`} style={{height:height,width:width}}>
         {props.children}
         </div>
-        </>
+        
     )
 }
 
