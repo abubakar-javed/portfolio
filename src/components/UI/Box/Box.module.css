@@ -10,21 +10,16 @@
   border: 1px solid #572e2e;
   color: white;
   background: #570606;
-  transition: color 0.3s, border-color 0.3s, background 0.4s, box-shadow 0.3s;
-  
-  
+  transition: color 0.3s, border-color 0.3s, background 0.4s, box-shadow 0.1s;
 }
-.boxContainer:focus{
-  outline: none;
-}
+
 
 
 .boxContainer:hover,
 .boxContainer:active {
   color: #ffffff;
   border-color: white;
-  background: #810404;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.26);
+  box-shadow: 5px 5px 100px rgba(0, 0, 0, 0.26);
   background: transparent;
 }
 

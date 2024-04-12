@@ -1,0 +1,48 @@
+.carousel_item{
+    margin-left: auto;
+    text-align: center;
+}
+.center_vertical {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+  }
+
+.testName{
+    
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    font-size:large;
+    font-weight:600;
+    margin: 1rem;
+
+}
+.testPic{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 3rem;
+    border: 2px solid white;
+    margin: 1rem;
+    margin-bottom: 0;
+}
+.testComment{
+    padding: 3rem;
+    padding-top: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(231, 131, 131);
+    font-size:medium;
+}
+.boxLine{
+    margin-top: -0.5rem;
+    padding-top: 0rem;
+  }
+.carouselButton{
+ height: 3rem;
+ width: 3rem;
+ background: transparent;
+ border: none;
+}
+button:hover,button:active {
+    background: transparent;
+    box-shadow: 0 0 15px rgba(242, 33, 33, 0.719);
+}
