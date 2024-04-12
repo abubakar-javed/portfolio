@@ -20,8 +20,8 @@ const Tools = [
     { title: "Jira", level: "Intermediate" },
 ]
 const Experience = () => {
-    const boxStyle1 = { height: "23rem", width: "16rem", textAlign: "center", paddingTop: "5rem" };
-    const boxStyle2 = { height: "23rem", width: "35rem", textAlign: "center", paddingTop: "5rem" };
+    const boxStyle1 = { height: "23rem", width: "16rem"};
+    const boxStyle2 = { height: "23rem", width: "35rem"};
     const box1Content = (
         <span>
             <div className={`${classes.boxTitle}`}>Frameworks</div>
@@ -113,7 +113,7 @@ const Experience = () => {
     )
     return (
         <>
-            <h1 className="text-center">Experience</h1>
+            <h1 className="text-center p-5">Experience</h1>
             <div className="p-5">
                 <div className="row text-center">
                     <div className="col-3">
