@@ -1,0 +1,26 @@
+.navigation{
+    height: 4rem;
+    width: 20rem;
+    position: fixed;
+    border-radius: 2rem;
+    left: 50%; 
+    transform: translateX(-50%); 
+    bottom: 5%; 
+    background: rgba( 87, 6, 6, 0.8 );
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    z-index: 3;
+}
+.NavLogos{
+    padding: 0.9rem;
+    border-radius:1.2rem;
+}
+
+.NavLogos:hover,
+.NavLogos:active{
+    background-color: rgba(97, 9, 9, 0.8);
+}

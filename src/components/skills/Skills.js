@@ -124,7 +124,7 @@ const Skills = () => {
   const boxStyle={height:"10rem",width:"8rem",textAlign:"center"};
   return (
     <>
-      <h1 className={`text-center title ${classes.title}`}>Skills</h1>
+      <h1 className={`text-center title ${classes.title} p-5`} id="skillsHeading">Skills</h1>
       <div className="container">
         <div className="row">
           <div className="col-6">

@@ -1,0 +1,21 @@
+.contactButton{
+    background: rgb(146, 94, 94);
+    font-weight:300;
+    margin-top: 1rem;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #700000;
+}
+
+.contactButton:hover,
+.contactButton:active {
+    color: white;
+    border-color: white;
+    box-shadow: 0 0 8px white;
+    background: rgb(146, 94, 94);
+}
+.boxLine{
+    padding-top: 0rem;
+}
+.contactImageWhatsapp{
+    margin-bottom: 0.25rem;
+}

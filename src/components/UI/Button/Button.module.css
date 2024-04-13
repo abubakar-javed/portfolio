@@ -12,16 +12,14 @@ button {
     border: 1px solid #572e2e;
     color: white;
     background: #570606;
-    
-  transition: color 0.3s, border-color 0.3s, background 0.3s, box-shadow 0.3s;
+    transition: color 0.2s, border-color 0.2s, background 0.2s, box-shadow 0.2s;
   }
   .buttonAlt {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
     border: 1px solid #810404;
     color: #a51616;
     background: transparent;
-  transition: color 0.3s, border-color 0.3s, background 0.3s, box-shadow 0.3s;
-
+    transition: color 0.2s, border-color 0.2s, background 0.2s, box-shadow 0.2s;
   }
   
 

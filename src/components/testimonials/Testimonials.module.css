@@ -45,4 +45,5 @@
 button:hover,button:active {
     background: transparent;
     box-shadow: 0 0 15px rgba(242, 33, 33, 0.719);
+    border: 1px solid white;
 }

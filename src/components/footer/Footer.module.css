@@ -1,0 +1,74 @@
+.footer {
+    background-color: #570606;
+    margin-top: 9rem;
+    padding-bottom: 8rem;
+    padding-top: 4rem;
+    text-align: center;
+}
+
+.footerTitle {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+    margin-bottom: 2rem;
+}
+
+.footerNavigationItem {
+    color: rgb(146, 94, 94);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1.5rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footerNavigation {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding-right: 20rem;
+    padding-left: 20rem;
+}
+
+.footerNavigationItem:hover,
+.footerNavigationItem:active {
+    text-decoration: none;
+    color: white;
+
+}
+
+.footerLinks {
+    display: flex;
+    justify-content: center;
+}
+
+
+.footerLinkLogo {
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.footerLinkLogo:hover,
+.footerLinkLogo:active {
+    box-shadow: 0px 0px 10px white;
+    filter: drop-shadow(0px 0px 10px white);
+}
+
+.footerLinkLogo {
+    margin-top: 4.5rem;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+}
+.facebookLinkLogo{
+    margin-left: 3rem;
+}
+.rightsLine {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 4rem;
+    color: rgb(146, 94, 94);
+}
+
+.boxLine{
+    padding-top: 0rem;
+}

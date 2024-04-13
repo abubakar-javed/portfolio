@@ -11,7 +11,7 @@ const Elements = [
 
 const Testimonials = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const boxStyle1 = { height: "29rem", width: "27rem", textAlign: "center", paddingTop: "5rem", overflow:'hidden' };
+    const boxStyle1 = { height: "29rem", width: "27rem", textAlign: "center", overflow:'hidden' };
 
     useEffect(() => {
         const timerId = setTimeout(() => {
@@ -31,9 +31,9 @@ const Testimonials = () => {
 
     return (
         <>
-            <h1 className={`text-center title`}>Testimonials</h1>
+            <h1 className={`text-center title pb-5`} id='testimonialsHeading'>Testimonials</h1>
             <div className="container">
-                    <div className=" p-5 row text-center">
+                    <div className="row text-center">
                         <div className={`col-3 ${classes.center_vertical} p-5`}><Button className={`${classes.carouselButton} prev`} onClick={handlePrev}>
                             &#8592;
                         </Button></div>

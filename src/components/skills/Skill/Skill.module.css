@@ -73,7 +73,7 @@
       box-shadow: 0 10px 20px #810404, inset 0 0 0 2px #a80000;
       transform: translateY(-100px) rotate(0deg) scale(2);
       transition-duration: 400ms;
-      z-index: 5;
+      z-index: 2;
   }
   .card:nth-child(1):hover .card_face:after,.card:nth-child(2):hover .card_face:after,.card:nth-child(3):hover .card_face:after,.card:nth-child(4):hover .card_face:after,.card:nth-child(5):hover .card_face:after,.card:nth-child(6):hover .card_face:after,.card:nth-child(7):hover .card_face:after,.card:nth-child(8):hover .card_face:after,.card:nth-child(9):hover .card_face:after,.card:nth-child(10):hover .card_face:after {
     -webkit-animation: fade 250ms ease-out forwards;
