@@ -113,7 +113,7 @@ const Experience = () => {
     )
     return (
         <>
-            <h1 className="text-center p-5">Experience</h1>
+            <h1 className="text-center p-5" id="experienceHeading">Experience</h1>
             <div className="p-5">
                 <div className="row text-center">
                     <div className="col-3">

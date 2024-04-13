@@ -59,7 +59,7 @@ const Contact = () => {
 
     return (
         <>
-            <h1 className={`text-center title p-5`}>Contact</h1>
+            <h1 className={`text-center title p-5`} id='contactHeading'>Contact</h1>
             <div className="container">
                     <div className="row">
                         <div className="col-6">

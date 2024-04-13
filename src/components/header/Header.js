@@ -17,7 +17,7 @@ const Header = () => {
           <Polygon key={index} rotation={shape.rotation} initialAngle={90} />
         ))}
       </div>
-      <div className={classes.text}>Hello</div>
+      <div className={classes.text} id="aboutHeading">Hello</div>
       <div className={classes.rightSide}>
         {shapes.map((shape, index) => (
           <Polygon key={index} rotation={-shape.rotation}  initialAngle={-90}/>

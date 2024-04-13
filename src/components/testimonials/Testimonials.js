@@ -31,7 +31,7 @@ const Testimonials = () => {
 
     return (
         <>
-            <h1 className={`text-center title p-5`}>Testimonials</h1>
+            <h1 className={`text-center title pb-5`} id='testimonialsHeading'>Testimonials</h1>
             <div className="container">
                     <div className="row text-center">
                         <div className={`col-3 ${classes.center_vertical} p-5`}><Button className={`${classes.carouselButton} prev`} onClick={handlePrev}>

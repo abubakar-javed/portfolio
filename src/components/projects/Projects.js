@@ -9,13 +9,13 @@ const Elements = [
 ]
 const Projects = () => {
     const boxStyle1 = { height: "20rem", width: "18rem", textAlign: "center"};
-    const imageStyle={height: "10rem", width: "15rem",marginTop:"1rem"}
+    const imageStyle={height: "10rem", width: "15rem",marginTop:"1rem",borderRadius:"2rem"}
     const openLink = (link) => {
         window.open(link, "_blank");
     };
     return (
         <>
-            <h1 className={`text-center title m-5`}>Projects</h1>
+            <h1 className={`text-center title p-5`} id="projectsHeading">Projects</h1>
             <div className="container">
                 <div className="row text-center">
                     {Elements.map((element, index) => (
