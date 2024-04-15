@@ -1,0 +1,174 @@
+{
+    "_id": {
+        "$oid": "661d5fea44ea4feaece89d29"
+    },
+    "header": {
+        "mainHeading": "Hello1"
+    },
+    "basicInfo": {
+        "description": "MERN Stack Developer with 1+ years of experience in building and maintaining scalable web applications. Proven ability to work independently and as part of a team. Problem-solving full-stack developer with a strong grip on SQL and non-SQL databases, and a knack for learning new technologies."
+    },
+    "skills": {
+        "description": "Got something wrong with your web or want to digitize your business? Worry not ....You are at the right place. A professional developer is looking your way with experience and expertise in both maintaining awesome UIs with collaboration of smart SEO and at the same time handling server-side (backend) logic. Want an interaction....? Jump down to interaction section.",
+        "experience": "2+1",
+        "projects": "20+1",
+        "skillsDetails": [
+            {
+                "logoSRC": "figma.png",
+                "name": "Figma",
+                "experience": "6+ Months",
+                "style": {
+                    "logoShadow": "drop-shadow(0px 10px 0.5rem #f24e1e)",
+                    "detailsColor": "#f24e1e",
+                    "detailsTextShadow": "0px 5px 5px #f24e1e",
+                    "logoPadding": "0.7rem"
+                }
+            },
+            {
+                "logoSRC": "github.png",
+                "name": "Github",
+                "experience": "1.5+ Years",
+                "style": {
+                    "logoShadow": "drop-shadow(0px 10px 0.5rem #ffffff)",
+                    "detailsColor": "#ffffff",
+                    "detailsTextShadow": "0px 5px 5px #ffffff",
+                    "logoPadding": "0.7rem"
+                }
+            },
+            {
+                "logoSRC": "php.png",
+                "name": "PHP",
+                "experience": "6+ Months",
+                "style": {
+                    "logoShadow": "drop-shadow(0px 10px 0.5rem #777BB3)",
+                    "detailsColor": "#777BB3",
+                    "detailsTextShadow": "0px 5px 5px #777BB3",
+                    "logoPadding": "0.7rem"
+                }
+            },
+            {
+                "logoSRC": "typescript.png",
+                "name": "Typescript",
+                "experience": "6+ Months",
+                "style": {
+                    "logoShadow": "drop-shadow(0px 10px 0.5rem #3178c6)",
+                    "detailsColor": "#3178c6",
+                    "detailsTextShadow": "0px 5px 5px #3178c6",
+                    "logoPadding": "0.7rem"
+                }
+            },
+            {
+                "logoSRC": "mysql.png",
+                "name": " MySQL ",
+                "experience": "1.5+ Years",
+                "style": {
+                    "logoShadow": "drop-shadow(0px 10px 0.5rem #F29111)",
+                    "detailsColor": "#F29111",
+                    "detailsTextShadow": "0px 5px 5px #F29111",
+                    "logoPadding": "0.7rem"
+                }
+            },
+            {
+                "logoSRC": "mongodb.png",
+                "name": "MongoDB",
+                "experience": "1.5+ Years",
+                "style": {
+                    "logoShadow": "drop-shadow(0px 10px 0.5rem #3FA037)",
+                    "detailsColor": "#3FA037",
+                    "detailsTextShadow": "0px 5px 5px #3FA037",
+                    "logoPadding": "0.5rem"
+                }
+            },
+            {
+                "logoSRC": "laravel.png",
+                "name": "Laravel",
+                "experience": "6+ Months",
+                "style": {
+                    "logoShadow": "drop-shadow(0px 10px 0.5rem #F05340)",
+                    "detailsColor": "#F05340",
+                    "detailsTextShadow": "0px 5px 5px #F05340",
+                    "logoPadding": "0.7rem"
+                }
+            },
+            {
+                "logoSRC": "node.png",
+                "name": "Node Js",
+                "experience": "1.5+ Years",
+                "style": {
+                    "logoShadow": "drop-shadow(0px 10px 0.5rem #3c873a)",
+                    "detailsColor": "#3c873a",
+                    "detailsTextShadow": "0px 5px 5px #3c873a",
+                    "logoPadding": "0.7rem"
+                }
+            },
+            {
+                "logoSRC": "angular.png",
+                "name": "Angular Js",
+                "experience": "6+ Months",
+                "style": {
+                    "logoShadow": "drop-shadow(0px 10px 0.5rem #dd1b16)",
+                    "detailsColor": "#dd1b16",
+                    "detailsTextShadow": "0px 5px 5px #dd1b16",
+                    "logoPadding": "0.7rem"
+                }
+            },
+            {
+                "logoSRC": "react.png",
+                "name": "React Js",
+                "experience": "1.5+ Years",
+                "style": {
+                    "logoShadow": "drop-shadow(0px 10px 0.5rem #61DBFB)",
+                    "detailsColor": "#61DBFB",
+                    "detailsTextShadow": "0px 5px 5px #1f9cbb",
+                    "logoPadding": "0.7rem"
+                }
+            }
+        ]
+    },
+    "experience":{
+        "languagesAndDbs":[
+            { "title1": "Javascript", "level1": "Experienced","title2": "Typescript", "level2": "Intermediate"  },
+            { "title1": "Html", "level1": "Experienced","title2": "CSS", "level2": "Experienced" },
+            { "title1": "Python", "level1": "Intermediate","title2": "Java", "level2": "Basic" },
+            { "title1": "MySql", "level1": "Experienced","title2": "MongoDB", "level2": "Experienced" }
+        ],
+        "frameworks":[
+            { "title": "React Js", "level": "Experienced" },
+            { "title": "Node Js", "level": "Experienced" },
+            { "title": "Angular Js", "level": "Intermediate" },
+            { "title": "Bootstrap", "level": "Experienced" }
+        ],
+        "tools":[
+            { "title": "Github", "level": "Experienced" },
+            { "title": "Figma", "level": "Experienced" },
+            { "title": "AutoCAD", "level": "Basic" },
+            { "title": "Jira", "level": "Intermediate" }
+        ]
+    },
+    "projects":[
+        {"img":"photogallery.jpeg","title":"PhotoGallery (Microservices)","github_link":"https://github.com/abubakar-javed/Microservices_photoGallery","demo_link":"https://github.com/abubakar-javed"},
+        {"img":"portfolio.jpg","title":"Portfolio App","github_link":"https://github.com/abubakar-javed/portfolio","demo_link":"https://github.com/abubakar-javed"},
+        {"img":"photogallery.jpeg","title":"PhotoGallery (Microservices)","github_link":"https://github.com/abubakar-javed/Microservices_photoGallery","demo_link":"https://github.com/abubakar-javed"},
+        {"img":"portfolio.jpg","title":"Portfolio App","github_link":"https://github.com/abubakar-javed/portfolio","demo_link":"https://github.com/abubakar-javed"}
+    ],
+    "testimonials":[
+        { "name": "Tin Shaw", "pic":"test1.jpg","comment":"We have been very happy with our new website! It looks professional and very easy to navigate. Our experience with Mohad and his team has been great. They handle things very efficiently and are available for any questions we have. They also keep us updated on monthly reports so we know how our site is doing. I would recommend them to anyone looking for website design or SEO work! (Fiver -2020)" },
+        { "name": "Shatta Wale", "pic":"test2.jpg","comment":"My new website is everything that I wanted.You are much better than other people I have hired so far. What I loved about you was the fact that you started with a plan and executed it. You were also very easy to communicate with and were able to work from concepts rather than needing me to design the website myself. (Upwork -2021)" },
+        { "name": "Kwame Despite", "pic":"test3.jpg","comment":"It has been a pleasure working with you. I appreciate your dedication to the projects that you and your team are on. It is nice from the customers stand point to be able to get in touch with you and your team and you guys always made yourselves available. You did a great job for us and I would recommend you to anyone. (Fiver -2021)" }
+    ],
+    "contact":{
+        "email":"ajaved.bese21seecs@seecs.edu.pk",
+        "whatsapp":"+92 3095322507"
+    },
+    "footer":{
+        "githubLink":"https://github.com/abubakar-javed",
+        "linkedInLink":"https://github.com/abubakar-javed",
+        "facebookLink":"https://github.com/abubakar-javed",
+        "instagramLink":"https://github.com/abubakar-javed",
+        "twitterLink":"https://github.com/abubakar-javed"
+    }
+}
+
+
+
+

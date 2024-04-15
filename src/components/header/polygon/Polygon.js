@@ -2,19 +2,21 @@ import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import classes from "./Polygon.module.css";
 
-const Polygon = ({ rotation,initialAngle }) => {
-  const [currentRotation, setCurrentRotation] = useState(initialAngle);
+const Polygon = ({ rotation, initialAngle }) => {
+  const [currentAngle, setCurrentAngle] = useState(initialAngle);
 
   useEffect(() => {
-    const timeout = setTimeout(() => {
-      setCurrentRotation(rotation);
-    }, 100); 
+    const interval = setInterval(() => {
+      setCurrentAngle((prevAngle) => {
+        return prevAngle === initialAngle ? rotation : initialAngle;
+      });
+    }, 3000); 
 
-    return () => clearTimeout(timeout); 
-  }, [rotation]);
+    return () => clearInterval(interval);
+  }, [rotation, initialAngle]);
 
   const style = {
-    transform: `rotate(${currentRotation}deg)`,
+    transform: `rotate(${currentAngle}deg)`,
     transition: "transform 0.7s ease-in-out",
   };
 
@@ -32,6 +34,7 @@ const Polygon = ({ rotation,initialAngle }) => {
 
 Polygon.propTypes = {
   rotation: PropTypes.number.isRequired,
+  initialAngle: PropTypes.number.isRequired,
 };
 
 export default Polygon;
