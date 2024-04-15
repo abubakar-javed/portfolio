@@ -1,9 +1,6 @@
 import classes from "./Footer.module.css"
 
 const Footer = () => {
-    const openLink = () => {
-        window.open('https://wa.me/+923095322507', '_blank');
-    }
     return (
         <>
             <div className={classes.footer}>
