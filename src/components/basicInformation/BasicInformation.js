@@ -2,7 +2,18 @@ import React from "react";
 import classes from "./BasicInformation.module.css";
 import ProfilePic from "./profilePic/ProfilePic";
 import Button from "../UI/Button/Button";
-const BasicInformation = () => {
+import { useState,useEffect } from "react";
+const DESCRIPTION= `MERN Stack Developer with 1+ years of experience in building and maintaining scalable web applications. Proven ability to work independently and as part of a team. Problem-solving full-stack developer with a strong grip on SQL and non-SQL databases, and a knack for learning new technologies.`
+const BasicInformation = (props) => {
+  const [description, setDescription] = useState(DESCRIPTION);
+  useEffect(()=>{
+    if (props.ProfileData && props.ProfileData[0]?.basicInfo?.description) {
+      setDescription(props.ProfileData[0].basicInfo.description);
+    } else {
+      setDescription(DESCRIPTION); 
+    }
+  },[props.ProfileData])
+ 
   return (
     <>
       <div className="container">
@@ -12,11 +23,7 @@ const BasicInformation = () => {
               I'm <h3 className={classes.name}>Abubakar Javed</h3>
             </div>
             <p>
-              MERN Stack Developer with 1+ years of experience in building and
-              maintaining scalable web applications. Proven ability to work
-              independently and as part of a team. Problem-solving full-stack
-              developer with a strong grip on SQL and non-SQL databases, and a
-              knack for learning new technologies.
+            {description}
             </p>
           </div>
           <div className="col-6">
@@ -26,7 +33,7 @@ const BasicInformation = () => {
               <div className="col-5">
                 <Button alt>Download CV</Button>
               </div>
-              
+
               <div className="col-4">
                 <Button>Let's Talk</Button>
               </div>

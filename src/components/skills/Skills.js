@@ -120,8 +120,18 @@ const SKILLS = [
     },
   },
 ];
-const Skills = () => {
+const Skills = (props) => {
+  const [skills, setSkills] = useState({skillsDetails:SKILLS,experience:"2+",projects:"20+"});
   const boxStyle={height:"10rem",width:"8rem",textAlign:"center"};
+
+  useEffect(()=>{
+    if (props.ProfileData && props.ProfileData[0]?.skills) {
+      setSkills(props.ProfileData[0].skills);
+    } else {
+      setSkills(SKILLS); 
+    }
+  },[props.ProfileData])
+
   return (
     <>
       <h1 className={`text-center title ${classes.title} p-5`} id="skillsHeading">Skills</h1>
@@ -129,7 +139,9 @@ const Skills = () => {
         <div className="row">
           <div className="col-6">
             <div className={`${classes.cards} mt-5`}>
-              {SKILLS.map((element, key) => (
+              {skills.skillsDetails? skills.skillsDetails.map((element, key) => (
+                <Skill key={key} element={element} style={element.style}/>
+              )):SKILLS.map((element, key) => (
                 <Skill key={key} element={element} style={element.style}/>
               ))}
             </div>
@@ -142,7 +154,7 @@ const Skills = () => {
               <img src="experience.svg" height="50rem" width="30rem" className={classes.boxIcon}></img>
               <span className={classes.boxTitle}>Experience</span>
               <hr className={classes.boxLine}></hr>
-              <span className={classes.boxDesc}>2+ Years</span>
+              <span className={classes.boxDesc}>{skills.experience?skills.experience:"2+"} Years</span>
             </Box>
             </div>
             <div className="col-5">
@@ -150,7 +162,7 @@ const Skills = () => {
               <img src="projects.svg" height="50rem" width="30rem" className={classes.boxIcon}></img>
               <span className={classes.boxTitle2}>Projects</span>
               <hr className={classes.boxLine}></hr>
-              <span className={classes.boxDesc2}>20+ Projects</span>
+              <span className={classes.boxDesc2}>{skills.projects?skills.projects:"20+"} Projects</span>
             </Box>
             </div>
             <div className="col-2"></div>
@@ -158,7 +170,7 @@ const Skills = () => {
             
             </div>
             <div className="row" style={{marginTop:"2rem"}}>
-            Got something wrong with your web or want to digitize your business? Worry not ....You are at the right place.A professional developer is looking your way with experience and expertees in both maintaining awesome UIs with collaboration of smart SEO and at the same time handling server side(backend) logic.Want an interaction....? Jump down to interaction section. </div>
+            {skills.description?skills.description:"Got something wrong with your web or want to digitize your business? Worry not ....You are at the right place.A professional developer is looking your way with experience and expertees in both maintaining awesome UIs with collaboration of smart SEO and at the same time handling server side(backend) logic.Want an interaction....? Jump down to interaction section. "}</div>
           </div>
         </div>
       </div>
