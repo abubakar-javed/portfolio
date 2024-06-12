@@ -1,6 +1,6 @@
 import classes from "./Experience.module.css"
 import Box from "../UI/Box/Box"
-
+import { useState,useEffect } from "react"
 const LanguagesAndDBs = [
     { title1: "Javascript", level1: "Experienced",title2: "Typescript", level2: "Intermediate"  },
     { title1: "Html", level1: "Experienced",title2: "CSS", level2: "Experienced" },
@@ -19,14 +19,32 @@ const Tools = [
     { title: "AutoCAD", level: "Basic" },
     { title: "Jira", level: "Intermediate" },
 ]
-const Experience = () => {
+const Experience = (props) => {
+    const [langDB, setLangDB] = useState(LanguagesAndDBs);
+    const [frameworks, setFrameworks] = useState(Frameworks);
+    const [tools, setTools] = useState(Tools);
+    useEffect(()=>{
+      if (props.ProfileData && props.ProfileData[0]?.experience?.languagesAndDbs) {
+        setLangDB(props.ProfileData[0].experience.languagesAndDbs);
+        setFrameworks(props.ProfileData[0].experience.frameworks);
+        setTools(props.ProfileData[0].experience.tools);
+      } else {
+        setLangDB(LanguagesAndDBs); 
+        setFrameworks(Frameworks); 
+        setTools(Tools); 
+      }
+    },[props.ProfileData])
+
+
+
+
     const boxStyle1 = { height: "23rem", width: "16rem"};
     const boxStyle2 = { height: "23rem", width: "35rem"};
     const box1Content = (
         <span>
             <div className={`${classes.boxTitle}`}>Frameworks</div>
             <hr className={classes.boxLine}></hr>
-            {Frameworks.map((element, index) => (
+            {frameworks.map((element, index) => (
                 <span className={classes.expElement} key={index}>
                     <div className="row">
                         <div className="col-3 mt-1">
@@ -51,7 +69,7 @@ const Experience = () => {
         <span>
             <div className={`${classes.boxTitle}`}>Languages and DBs</div>
             <hr className={classes.boxLine}></hr>
-            {LanguagesAndDBs.map((element, index) => (
+            {langDB.map((element, index) => (
                 <span className={classes.expElement} key={index}>
                     <div className="row">
                         <div className="col-2 mt-1">
@@ -90,7 +108,7 @@ const Experience = () => {
         <span>
             <div className={`${classes.boxTitle}`}>Tools</div>
             <hr className={classes.boxLine}></hr>
-            {Tools.map((element, index) => (
+            {tools.map((element, index) => (
                 <span className={classes.expElement} key={index}>
                     <div className="row">
                         <div className="col-3 mt-1">

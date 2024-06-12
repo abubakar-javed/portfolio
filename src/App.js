@@ -38,11 +38,11 @@ function App() {
       <Header ProfileData={portData} />
       <BasicInformation ProfileData={portData}/>
       <Skills ProfileData={portData}/>
-      <Experience />
-      <Projects />
-      <Testimonials />
-      <Contact />
-      <Footer />
+      <Experience ProfileData={portData}/>
+      <Projects ProfileData={portData}/>
+      <Testimonials ProfileData={portData}/>
+      <Contact ProfileData={portData}/>
+      <Footer ProfileData={portData}/>
     </div>
   );
 }
