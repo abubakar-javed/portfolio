@@ -18,18 +18,22 @@ const Header = (props) => {
     }
   }, [props.ProfileData])
   return (
-    <div className={`${classes.header} container `}>
-      <div className="row">
-        <div className={`${classes.leftSiderow} col-3`}>
+    <div className={`${classes.header} container`}>
+      <div className="row ml-0">
+        <div className={`${classes.leftSiderow} col-md-3 col-sm-4 col-3`}>
               {shapes.map((shape, index) => (
                 <Polygon key={index} rotation={shape.rotation} initialAngle={90} />
               ))}
         </div>
-        <div className={`${classes.text} col-6 text-center`} id="aboutHeading">{heading}</div>
-        <div className={`${classes.rightSide} col-3`}>
-              {shapes.map((shape, index) => (
+        <div className={`${classes.text} col-md-6 col-sm-4 col-5 text-center`} id="aboutHeading">{heading}</div>
+        <div className={`${classes.rightSide} col-md-3 col-sm-4 col-4 row p-0`}>
+          <div className="col-lg-6 col-md-1 col-3 p-0 p-lg-1"></div>
+          <div className="col-lg-6 col-md-10 col-9 p-0 ">
+          {shapes.map((shape, index) => (
                 <Polygon key={index} rotation={-shape.rotation} initialAngle={-90} />
               ))}
+          </div>
+              
         </div>
       </div>
     </div>
