@@ -1,6 +1,6 @@
 .header{
     background:transparent;     
-    margin-bottom: 7rem;
+    margin-bottom: 0rem;
     text-align: center;
     width: 100%;
   }
@@ -42,5 +42,8 @@
 @media screen and (min-width: 990px) {
   .text {
     font-size: 4rem;
+  }
+  .header{    
+    margin-bottom: 3rem;
   }
 }
