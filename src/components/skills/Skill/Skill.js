@@ -19,7 +19,7 @@ const Skill = (props) => {
             className={`${classes.skill_details} row`}
             style={{ color: detailsColor, textShadow: detailsTextShadow }}
           >
-            <span className="text-center">
+            <span className={`text-center ${classes.skill_details_text}`} >
               {props.element.name}
               <br />
               {props.element.experience}
