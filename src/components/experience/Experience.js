@@ -51,29 +51,29 @@ const Experience = (props) => {
     },[props.ProfileData])
 
 
-    const [boxStyle1, setBoxStyle1] = useState({ height: "25rem", width: "16rem",marginLeft:"auto",marginRight:"auto",marginBottom:"2rem"});
-    const [boxStyle2, setBoxStyle2] = useState({ height: "23rem", width: "35rem",marginLeft:"auto",marginRight:"auto",marginBottom:"2rem"});
+    const [boxStyle1, setBoxStyle1] = useState({ height: "25rem", width: "16rem",marginLeft:"auto",marginRight:"auto",marginBottom:"3rem"});
+    const [boxStyle2, setBoxStyle2] = useState({ height: "23rem", width: "35rem",marginLeft:"auto",marginRight:"auto",marginBottom:"3rem"});
 
 
     useEffect(() => {
         const updateBoxStyle = () => {
           if (window.innerWidth < 768) { 
-            setBoxStyle1({ height: "25rem", width: "16rem",marginLeft:"auto",marginRight:"auto",marginBottom:"2rem"});
+            setBoxStyle1({ height: "25rem", width: "16rem",marginLeft:"auto",marginRight:"auto",marginBottom:"3rem"});
           } 
           else if (window.innerWidth < 992) { 
-            setBoxStyle1({ height: "23rem", width: "16rem",marginLeft:"auto",marginRight:"auto",marginBottom:"2rem"});
+            setBoxStyle1({ height: "23rem", width: "16rem",marginLeft:"auto",marginRight:"auto",marginBottom:"3rem"});
           }
           else if (window.innerWidth < 1100){
-            setBoxStyle1({ height: "23rem", width: "14rem",marginLeft:"auto",marginRight:"auto",marginBottom:"2rem"});
-            setBoxStyle2({ height: "23rem", width: "32rem",marginLeft:"auto",marginRight:"auto",marginBottom:"2rem"});
+            setBoxStyle1({ height: "23rem", width: "14rem",marginLeft:"auto",marginRight:"auto",marginBottom:"3rem"});
+            setBoxStyle2({ height: "23rem", width: "32rem",marginLeft:"auto",marginRight:"auto",marginBottom:"3rem"});
           } 
           else if (window.innerWidth < 1400){
-            setBoxStyle1({ height: "23rem", width: "16rem",marginLeft:"auto",marginRight:"auto",marginBottom:"2rem"});
-            setBoxStyle2({ height: "23rem", width: "35rem",marginLeft:"auto",marginRight:"auto",marginBottom:"2rem"});  
+            setBoxStyle1({ height: "23rem", width: "16rem",marginLeft:"auto",marginRight:"auto",marginBottom:"3rem"});
+            setBoxStyle2({ height: "23rem", width: "35rem",marginLeft:"auto",marginRight:"auto",marginBottom:"3rem"});  
           }
           else{
-            setBoxStyle1({ height: "23rem", width: "14rem",marginLeft:"auto",marginRight:"auto",marginBottom:"2rem"});
-            setBoxStyle2({ height: "23rem", width: "33rem",marginLeft:"auto",marginRight:"auto",marginBottom:"2rem"});  
+            setBoxStyle1({ height: "23rem", width: "14rem",marginLeft:"auto",marginRight:"auto",marginBottom:"3rem"});
+            setBoxStyle2({ height: "23rem", width: "33rem",marginLeft:"auto",marginRight:"auto",marginBottom:"3rem"});  
           }
         };
     
