@@ -25,4 +25,14 @@
 .boxLine{
     margin-top: -0.5rem;
     padding-top: 0rem;
-  }
+}
+
+.box_num_1,.box_num_2,.box_num_3{
+ padding: 0;
+}
+
+@media (min-width:500px){ 
+    .box_num_1,.box_num_1,.box_num_1{
+      
+    }
+}

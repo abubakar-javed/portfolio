@@ -73,3 +73,15 @@ font-size:xx-small;
   padding-top: 0.65rem;
 }
 
+
+@media (min-width: 768px) {
+  .carousel-root {
+      display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .row.text-center {
+      display: none;
+  }
+}
