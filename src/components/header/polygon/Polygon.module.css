@@ -1,10 +1,22 @@
 .box {
-    height: 18px;
-    width: 220px;
+    height: 0.3rem;
+    width: 6rem;
 }
 
 .box .polygon {
     height: auto;
     width: 100%;
 }
-
+@media screen and (min-width: 520px) {
+    .box {
+        height: 0.5rem;
+        width: 8.5rem;
+    }
+ 
+}
+@media screen and (min-width: 990px) {
+    .box {
+        height: 1rem;
+        width: 8rem;
+    }
+}

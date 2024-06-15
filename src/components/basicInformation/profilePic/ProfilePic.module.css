@@ -1,5 +1,20 @@
 .profile_pic_container{
-    margin-left: 7rem;
+    margin-left: 0rem;
     background-color: rgba(27, 25, 25, 0.3);
     border-radius: 7rem 7rem 0 0; 
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .profile_pic_container{
+        height: 13rem;
+        width: 15rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .profile_pic_container{
+        height: 17rem;
+        width: 18rem;
+    }
 }
