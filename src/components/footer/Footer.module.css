@@ -20,15 +20,14 @@
     margin: 1.5rem;
     text-decoration: none;
     cursor: pointer;
+    display: block;
 }
 
 .footerNavigation {
-    display: flex;
-    justify-content: space-around;
     list-style-type: none;
-    padding-right: 20rem;
-    padding-left: 20rem;
+    text-align: center;
 }
+
 
 .footerNavigationItem:hover,
 .footerNavigationItem:active {
@@ -56,11 +55,11 @@
 
 .footerLinkLogo {
     margin-top: 4.5rem;
-    margin-left: 0.7rem;
-    margin-right: 0.7rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 .facebookLinkLogo{
-    margin-left: 3rem;
+    margin-left: 1.5rem;
 }
 .rightsLine {
     font-family: Arial, Helvetica, sans-serif;
@@ -72,3 +71,49 @@
 .boxLine{
     padding-top: 0rem;
 }
+@media (min-width:320px){  
+    .footerLinkLogo {
+        margin-left: 0.7rem;
+        margin-right: 0.7rem;
+    }
+    .facebookLinkLogo{
+        margin-left: 3rem;
+    }
+}
+@media (min-width:576px){  
+
+    .footerNavigationItem {
+        margin: 1rem;
+    }
+    
+    .footerNavigation {
+        display: flex;
+        justify-content: space-around;
+        padding-right: 0rem;
+        padding-left: 0rem;
+    }
+}
+@media (min-width:768px){  
+    .footerNavigation {
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+}
+  @media (min-width:992px){      
+    .footerNavigation {
+        padding-right: 10rem;
+        padding-left: 10rem;
+    }
+  }
+  @media (min-width:1200px){      
+    .footerNavigation {
+        padding-right: 15rem;
+        padding-left: 15rem;
+    }
+  }
+  @media (min-width:1400px){      
+    .footerNavigation {
+        padding-right: 22rem;
+        padding-left: 22rem;
+    }
+  }
