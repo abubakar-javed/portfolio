@@ -12,13 +12,11 @@ const TESTIMONIALS = [
 const Testimonials = (props) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [testimonials, setTestimonials] = useState(TESTIMONIALS);
-    // useEffect(() => {
-    //     if (props.ProfileData && props.ProfileData[0]?.testimonials) {
-    //         setTestimonials(props.ProfileData[0].testimonials);
-    //     } else {
-    //         setTestimonials(TESTIMONIALS);
-    //     }
-    // }, [props.ProfileData])
+    useEffect(() => {
+        if (props.ProfileData && props.ProfileData[0]?.testimonials) {
+            setTestimonials(props.ProfileData[0].testimonials);
+        } 
+    }, [props.ProfileData])
 
 
     const [boxStyle, setBoxStyle] = useState({ height: "29rem", width: "27rem", textAlign: "center", overflow: 'hidden', marginLeft: "auto", marginRight: "auto",padding:"0"});

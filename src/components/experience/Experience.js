@@ -47,13 +47,7 @@ const Experience = (props) => {
         setLangDBP2(props.ProfileData[0].experience.LanguagesAndDBs_p2)
         setFrameworks(props.ProfileData[0].experience.frameworks);
         setTools(props.ProfileData[0].experience.tools);
-      } else {
-        setLangDB(LanguagesAndDBs); 
-        setLangDBP1(LanguagesAndDBs_p1);
-        setLangDBP2(LanguagesAndDBs_p2);
-        setFrameworks(Frameworks); 
-        setTools(Tools); 
-      }
+      } 
     },[props.ProfileData])
 
 

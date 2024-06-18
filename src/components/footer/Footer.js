@@ -13,8 +13,6 @@ const Footer = (props) => {
     useEffect(() => {
         if (props.ProfileData && props.ProfileData[0]?.footer) {
             setFooter(props.ProfileData[0].footer);
-        } else {
-            setFooter(FOOTER);
         }
     }, [props.ProfileData])
     return (

@@ -12,9 +12,6 @@ const BasicInformation = (props) => {
     if (props.ProfileData && props.ProfileData[0]?.basicInfo?.description) {
       setDescription(props.ProfileData[0].basicInfo.description);
       setResumeLink(props.ProfileData[0].basicInfo.resumeLink);
-    } else {
-      setDescription(DESCRIPTION);
-      setResumeLink(RESUME_LINK);
     }
   }, [props.ProfileData])
   const openLink = (link) => {

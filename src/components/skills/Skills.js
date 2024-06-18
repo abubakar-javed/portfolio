@@ -147,9 +147,7 @@ const Skills = (props) => {
   useEffect(() => {
     if (props.ProfileData && props.ProfileData[0]?.skills) {
       setSkills(props.ProfileData[0].skills);
-    } else {
-      setSkills(SKILLS);
-    }
+    } 
   }, [props.ProfileData])
 
   return (

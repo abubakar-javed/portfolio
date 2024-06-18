@@ -12,8 +12,6 @@ const Contact = (props) => {
     useEffect(() => {
         if (props.ProfileData && props.ProfileData[0]?.contact) {
             setContact(props.ProfileData[0].contact);
-        } else {
-            setContact(CONTACT);
         }
     }, [props.ProfileData])
     const buttonStyle = { width: "11rem", padding: "0.5rem 1.5rem", borderRadius: "10px", fontWeight: "300", fontSize: "medium",marginLeft:"0" }
