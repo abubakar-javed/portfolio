@@ -247,7 +247,7 @@ const Experience = (props) => {
                     <div className="d-none d-xxl-block col-xxl-1 order-4"></div>
                 </div>
             </div>
-            <div className="d-block d-md-none">
+            <div className={`d-block d-md-none ${classes.carousel_box}`}>
                 <Carousel showArrows={false} showThumbs={false} infiniteLoop={true} showStatus={false}>
                     <div>
                         <Box style={boxStyle1}>

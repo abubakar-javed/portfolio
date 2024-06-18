@@ -6,7 +6,7 @@ button {
     font-weight:lighter;
     cursor: pointer;
     font-size: small;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Verdana';
     margin-bottom: 2rem;
   }
   .button{

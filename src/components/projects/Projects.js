@@ -44,7 +44,7 @@ const Projects = (props) => {
                             </div>
                         ))}
                     </div>
-                    <div className="d-block d-md-none">
+                    <div className={`d-block d-md-none ${classes.carousel_box}`}>
                         <Carousel
                             showArrows={false} infiniteLoop={true}  showThumbs={false} showStatus={false}
                         >

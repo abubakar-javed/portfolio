@@ -31,10 +31,25 @@ a:hover {
   margin: 0 auto;
   padding: 20px;
 }
+@font-face {
+  font-family: 'Verdana';
+  src: url('../public/fonts/verdana.ttf') format('truetype');
+}
 
-.h1,h2,h3,p,div{
+@font-face {
+  font-family: 'Comic Sans MS';
+  src: url('../public/fonts/ComicSansMS3.ttf') format('truetype');
+}
+
+h1, h2, h3, p, div {
   color: #AD0C0C;
-  font-family: cursive;
+  font-family: 'Comic Sans MS';
+}
+span{
+  font-family: 'Comic Sans MS';
+}
+button{
+  font-family: "Verdana";
 }
 
 h2 {
