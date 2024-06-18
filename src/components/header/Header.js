@@ -13,9 +13,7 @@ const Header = (props) => {
   useEffect(() => {
     if (props.ProfileData && props.ProfileData[0]?.header?.mainHeading) {
       setHeading(props.ProfileData[0].header.mainHeading);
-    } else {
-      setHeading("Hello");
-    }
+    } 
   }, [props.ProfileData])
   return (
     <div className={`${classes.header} container`}>

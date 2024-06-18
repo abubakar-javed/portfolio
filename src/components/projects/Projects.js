@@ -16,8 +16,6 @@ const Projects = (props) => {
     useEffect(() => {
         if (props.ProfileData && props.ProfileData[0]?.projects) {
             setProjects(props.ProfileData[0].projects);
-        } else {
-            setProjects(PROJECTS);
         }
     }, [props.ProfileData])
 
