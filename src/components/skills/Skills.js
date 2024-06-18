@@ -4,7 +4,7 @@ import Skill from "./Skill/Skill";
 import Box from "../UI/Box/Box";
 const SKILLS = [
   {
-    logoSRC: "figma.png",
+    logoSRC: "skills/figma.png",
     name: "Figma",
     experience: "6+ Months",
     style: {
@@ -16,7 +16,7 @@ const SKILLS = [
   },
 
   {
-    logoSRC: "github.png",
+    logoSRC: "skills/github.png",
     name: "Github",
     experience: "1.5+ Years",
     style: {
@@ -28,18 +28,18 @@ const SKILLS = [
   },
 
   {
-    logoSRC: "php.png",
-    name: "PHP",
+    logoSRC: "skills/python.png",
+    name: "Python",
     experience: "6+ Months",
     style: {
-      logoShadow: "drop-shadow(0px 10px 0.5rem #777BB3)",
-      detailsColor: "#777BB3",
-      detailsTextShadow: "0px 5px 5px #777BB3",
+      logoShadow: "drop-shadow(0px 10px 0.5rem #FFDE57)",
+      detailsColor: "#FFDE57",
+      detailsTextShadow: "0px 5px 5px #FFDE57",
       logoPadding: "0.7rem"
     },
   },
   {
-    logoSRC: "typescript.png",
+    logoSRC: "skills/typescript.png",
     name: "Typescript",
     experience: "6+ Months",
     style: {
@@ -49,12 +49,8 @@ const SKILLS = [
       logoPadding: "0.7rem"
     },
   },
-
-
-
-
   {
-    logoSRC: "mysql.png",
+    logoSRC: "skills/mysql.png",
     name: " MySQL ",
     experience: "1.5+ Years",
     style: {
@@ -65,7 +61,7 @@ const SKILLS = [
     },
   },
   {
-    logoSRC: "mongodb.png",
+    logoSRC: "skills/mongodb.png",
     name: "MongoDB",
     experience: "1.5+ Years",
     style: {
@@ -76,7 +72,7 @@ const SKILLS = [
     },
   },
   {
-    logoSRC: "laravel.png",
+    logoSRC: "skills/laravel.png",
     name: "Laravel",
     experience: "6+ Months",
     style: {
@@ -87,7 +83,7 @@ const SKILLS = [
     },
   },
   {
-    logoSRC: "node.png",
+    logoSRC: "skills/node.png",
     name: "Node Js",
     experience: "1.5+ Years",
     style: {
@@ -98,7 +94,7 @@ const SKILLS = [
     },
   },
   {
-    logoSRC: "angular.png",
+    logoSRC: "skills/angular.png",
     name: "Angular Js",
     experience: "6+ Months",
     style: {
@@ -109,7 +105,7 @@ const SKILLS = [
     },
   },
   {
-    logoSRC: "react.png",
+    logoSRC: "skills/react.png",
     name: "React Js",
     experience: "1.5+ Years",
     style: {
@@ -121,7 +117,7 @@ const SKILLS = [
   },
 ];
 const Skills = (props) => {
-  const [skills, setSkills] = useState({ skillsDetails: SKILLS, experience: "2+", projects: "20+" });
+  const [skills, setSkills] = useState({ skillsDetails: SKILLS, experience: "2+", projects: "10+" });
   const [boxStyle, setBoxStyle] = useState({  height: "8rem", width: "6.5rem", textAlign: "center" });
 
   useEffect(() => {
@@ -147,13 +143,7 @@ const Skills = (props) => {
 
   }, []);
 
-  useEffect(() => {
-    if (props.ProfileData && props.ProfileData[0]?.skills) {
-      setSkills(props.ProfileData[0].skills);
-    } else {
-      setSkills(SKILLS);
-    }
-  }, [props.ProfileData]);
+
   useEffect(() => {
     if (props.ProfileData && props.ProfileData[0]?.skills) {
       setSkills(props.ProfileData[0].skills);
@@ -182,7 +172,7 @@ const Skills = (props) => {
               <div className="col-1 col-md-1 col-lg-1"></div>
               <div className={`col-5 col-md-6 col-lg-5 ${classes.box_container}`}>
                 <Box style={boxStyle}>
-                  <img src="experience.svg" height="50rem" width="30rem" className={classes.boxIcon}></img>
+                  <img src="skills/experience.svg" height="50rem" width="30rem" className={classes.boxIcon}></img>
                   <span className={classes.boxTitle}>Experience</span>
                   <hr className={classes.boxLine}></hr>
                   <span className={classes.boxDesc}>{skills.experience ? skills.experience : "2+"} Years</span>
@@ -190,7 +180,7 @@ const Skills = (props) => {
               </div>
               <div className="col-4 col-md-5 col-lg-4">
                 <Box style={boxStyle}>
-                  <img src="projects.svg" height="50rem" width="30rem" className={classes.boxIcon}></img>
+                  <img src="skills/projects.svg" height="50rem" width="30rem" className={classes.boxIcon}></img>
                   <span className={classes.boxTitle2}>Projects</span>
                   <hr className={classes.boxLine}></hr>
                   <span className={classes.boxDesc2}>{skills.projects ? skills.projects : "20+"} Projects</span>
@@ -200,7 +190,7 @@ const Skills = (props) => {
 
             </div>
             <div className="row ml-md-3" style={{ marginTop: "2rem" }}>
-              {skills.description ? skills.description : "Got something wrong with your web or want to digitize your business? Worry not ....You are at the right place.A professional developer is looking your way with experience and expertees in both maintaining awesome UIs with collaboration of smart SEO and at the same time handling server side(backend) logic.Want an interaction....? Jump down to interaction section. "}</div>
+              {skills.description ? skills.description : "Looking to digitize your business? Here i am! and you're at the right place. Having experiences on both frontend and backend technologies, I can help you achieve your goals in best possible way. Ready to discuss? Head to the contact section below!!"}</div>
           </div>
         </div>
       </div>

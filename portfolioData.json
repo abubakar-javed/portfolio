@@ -3,18 +3,19 @@
         "$oid": "661d5fea44ea4feaece89d29"
     },
     "header": {
-        "mainHeading": "Hello1"
+        "mainHeading": "Hello"
     },
     "basicInfo": {
-        "description": "MERN Stack Developer with 1+ years of experience in building and maintaining scalable web applications. Proven ability to work independently and as part of a team. Problem-solving full-stack developer with a strong grip on SQL and non-SQL databases, and a knack for learning new technologies."
+        "description": "A Software Engineer having 1.5+ years of Experience in MERN Stack, 6 months in MEAN stack and about 4 months in Machine Learning (python). I have Proven ability to work independently as well as part of a team. Having Strong grip on SQL and non-SQL databases, experience in UI design (Figma) and a knack for learning new technologies makes me stand out from others.",
+        "resumeLink": "https://abubakar-resume.tiiny.site"
     },
     "skills": {
-        "description": "Got something wrong with your web or want to digitize your business? Worry not ....You are at the right place. A professional developer is looking your way with experience and expertise in both maintaining awesome UIs with collaboration of smart SEO and at the same time handling server-side (backend) logic. Want an interaction....? Jump down to interaction section.",
-        "experience": "2+1",
-        "projects": "20+1",
+        "description": "Looking to digitize your business? Here i am! and you're at the right place. Having experiences on both frontend and backend technologies, I can help you achieve your goals in best possible way. Ready to discuss? Head to the contact section below!!",
+        "experience": "2+",
+        "projects": "10+",
         "skillsDetails": [
             {
-                "logoSRC": "figma.png",
+                "logoSRC": "skills/figma.png",
                 "name": "Figma",
                 "experience": "6+ Months",
                 "style": {
@@ -25,7 +26,7 @@
                 }
             },
             {
-                "logoSRC": "github.png",
+                "logoSRC": "skills/github.png",
                 "name": "Github",
                 "experience": "1.5+ Years",
                 "style": {
@@ -36,18 +37,18 @@
                 }
             },
             {
-                "logoSRC": "php.png",
-                "name": "PHP",
+                "logoSRC": "skills/python.png",
+                "name": "Python",
                 "experience": "6+ Months",
                 "style": {
-                    "logoShadow": "drop-shadow(0px 10px 0.5rem #777BB3)",
-                    "detailsColor": "#777BB3",
-                    "detailsTextShadow": "0px 5px 5px #777BB3",
+                    "logoShadow": "drop-shadow(0px 10px 0.5rem #FFDE57)",
+                    "detailsColor": "#FFDE57",
+                    "detailsTextShadow": "0px 5px 5px #FFDE57",
                     "logoPadding": "0.7rem"
                 }
             },
             {
-                "logoSRC": "typescript.png",
+                "logoSRC": "skills/typescript.png",
                 "name": "Typescript",
                 "experience": "6+ Months",
                 "style": {
@@ -58,7 +59,7 @@
                 }
             },
             {
-                "logoSRC": "mysql.png",
+                "logoSRC": "skills/mysql.png",
                 "name": " MySQL ",
                 "experience": "1.5+ Years",
                 "style": {
@@ -69,7 +70,7 @@
                 }
             },
             {
-                "logoSRC": "mongodb.png",
+                "logoSRC": "skills/mongodb.png",
                 "name": "MongoDB",
                 "experience": "1.5+ Years",
                 "style": {
@@ -80,7 +81,7 @@
                 }
             },
             {
-                "logoSRC": "laravel.png",
+                "logoSRC": "skills/laravel.png",
                 "name": "Laravel",
                 "experience": "6+ Months",
                 "style": {
@@ -91,7 +92,7 @@
                 }
             },
             {
-                "logoSRC": "node.png",
+                "logoSRC": "skills/node.png",
                 "name": "Node Js",
                 "experience": "1.5+ Years",
                 "style": {
@@ -102,7 +103,7 @@
                 }
             },
             {
-                "logoSRC": "angular.png",
+                "logoSRC": "skills/angular.png",
                 "name": "Angular Js",
                 "experience": "6+ Months",
                 "style": {
@@ -113,7 +114,7 @@
                 }
             },
             {
-                "logoSRC": "react.png",
+                "logoSRC": "skills/react.png",
                 "name": "React Js",
                 "experience": "1.5+ Years",
                 "style": {
@@ -125,50 +126,164 @@
             }
         ]
     },
-    "experience":{
-        "languagesAndDbs":[
-            { "title1": "Javascript", "level1": "Experienced","title2": "Typescript", "level2": "Intermediate"  },
-            { "title1": "Html", "level1": "Experienced","title2": "CSS", "level2": "Experienced" },
-            { "title1": "Python", "level1": "Intermediate","title2": "Java", "level2": "Basic" },
-            { "title1": "MySql", "level1": "Experienced","title2": "MongoDB", "level2": "Experienced" }
+    "experience": {
+        "languagesAndDbs": [
+            {
+                "title1": "Javascript",
+                "level1": "Experienced",
+                "title2": "Typescript",
+                "level2": "Intermediate"
+            },
+            {
+                "title1": "Html",
+                "level1": "Experienced",
+                "title2": "CSS",
+                "level2": "Experienced"
+            },
+            {
+                "title1": "Python",
+                "level1": "Intermediate",
+                "title2": "Java",
+                "level2": "Basic"
+            },
+            {
+                "title1": "MySql",
+                "level1": "Experienced",
+                "title2": "MongoDB",
+                "level2": "Experienced"
+            }
         ],
-        "frameworks":[
-            { "title": "React Js", "level": "Experienced" },
-            { "title": "Node Js", "level": "Experienced" },
-            { "title": "Angular Js", "level": "Intermediate" },
-            { "title": "Bootstrap", "level": "Experienced" }
+        "LanguagesAndDBs_p1": [
+            {
+                "title": "Javascript",
+                "level": "Experienced"
+            },
+            {
+                "title": "Typescript",
+                "level": "Intermediate"
+            },
+            {
+                "title": "Html",
+                "level": "Experienced"
+            },
+            {
+                "title": "CSS",
+                "level": "Experienced"
+            }
         ],
-        "tools":[
-            { "title": "Github", "level": "Experienced" },
-            { "title": "Figma", "level": "Experienced" },
-            { "title": "AutoCAD", "level": "Basic" },
-            { "title": "Jira", "level": "Intermediate" }
+        "LanguagesAndDBs_p2": [
+            {
+                "title": "Python",
+                "level": "Intermediate"
+            },
+            {
+                "title": "Java",
+                "level": "Basic"
+            },
+            {
+                "title": "MySql",
+                "level": "Experienced"
+            },
+            {
+                "title": "MongoDB",
+                "level": "Experienced"
+            }
+        ],
+        "frameworks": [
+            {
+                "title": "React Js",
+                "level": "Experienced"
+            },
+            {
+                "title": "Node Js",
+                "level": "Experienced"
+            },
+            {
+                "title": "Angular Js",
+                "level": "Intermediate"
+            },
+            {
+                "title": "Bootstrap",
+                "level": "Experienced"
+            }
+        ],
+        "tools": [
+            {
+                "title": "Github",
+                "level": "Experienced"
+            },
+            {
+                "title": "Figma",
+                "level": "Experienced"
+            },
+            {
+                "title": "AutoCAD",
+                "level": "Basic"
+            },
+            {
+                "title": "Jira",
+                "level": "Intermediate"
+            }
         ]
     },
-    "projects":[
-        {"img":"photogallery.jpeg","title":"PhotoGallery (Microservices)","github_link":"https://github.com/abubakar-javed/Microservices_photoGallery","demo_link":"https://github.com/abubakar-javed"},
-        {"img":"portfolio.jpg","title":"Portfolio App","github_link":"https://github.com/abubakar-javed/portfolio","demo_link":"https://github.com/abubakar-javed"},
-        {"img":"photogallery.jpeg","title":"PhotoGallery (Microservices)","github_link":"https://github.com/abubakar-javed/Microservices_photoGallery","demo_link":"https://github.com/abubakar-javed"},
-        {"img":"portfolio.jpg","title":"Portfolio App","github_link":"https://github.com/abubakar-javed/portfolio","demo_link":"https://github.com/abubakar-javed"}
+    "projects": [
+        {
+            "img": "projects/photogallery.jpeg",
+            "title": "PhotoGallery (Microservices)",
+            "github_link": "https://github.com/abubakar-javed/Microservices_photoGallery",
+            "demo_link": "https://github.com/abubakar-javed"
+        },
+        {
+            "img": "projects/portfolio.jpg",
+            "title": "Portfolio App",
+            "github_link": "https://github.com/abubakar-javed/portfolio",
+            "demo_link": "https://github.com/abubakar-javed"
+        },
+        {
+            "img": "projects/easycoach.jpg",
+            "title": "EasyCoach",
+            "github_link": "https://github.com/emaanumer/EasyCoach",
+            "demo_link": "https://github.com/abubakar-javed"
+        },
+        {
+            "img": "projects/jinxed.png",
+            "title": "Jinxed Sorcerers (Game)",
+            "github_link": "https://github.com/Arch-Frost/Jinxed-Sorcerers",
+            "demo_link": "https://github.com/abubakar-javed"
+        },
+        {
+            "img": "projects/adoptease.jpg",
+            "title": "Adopt Ease",
+            "github_link": "https://github.com/emaanumer012/AdoptEase",
+            "demo_link": "https://github.com/abubakar-javed"
+        }
     ],
-    "testimonials":[
-        { "name": "Tin Shaw", "pic":"test1.jpg","comment":"We have been very happy with our new website! It looks professional and very easy to navigate. Our experience with Mohad and his team has been great. They handle things very efficiently and are available for any questions we have. They also keep us updated on monthly reports so we know how our site is doing. I would recommend them to anyone looking for website design or SEO work! (Fiver -2020)" },
-        { "name": "Shatta Wale", "pic":"test2.jpg","comment":"My new website is everything that I wanted.You are much better than other people I have hired so far. What I loved about you was the fact that you started with a plan and executed it. You were also very easy to communicate with and were able to work from concepts rather than needing me to design the website myself. (Upwork -2021)" },
-        { "name": "Kwame Despite", "pic":"test3.jpg","comment":"It has been a pleasure working with you. I appreciate your dedication to the projects that you and your team are on. It is nice from the customers stand point to be able to get in touch with you and your team and you guys always made yourselves available. You did a great job for us and I would recommend you to anyone. (Fiver -2021)" }
+    "testimonials": [
+        {
+            "name": "Shela M.",
+            "pic": "testimonials/shela.png",
+            "comment": "I had a project based on Express Js and React, which also included working on UI design as well. I am very satisfied with Abubakar. He not only timely delivered but the quality of the work was at top. I would really recommend him, for all kinds of project. He has really good working ability and he readily adopted to the docs i shared with him and produced the work which was even better. (Freelancer -2023)"
+        },
+        {
+            "name": "Warren",
+            "pic": "testimonials/warren.jpg",
+            "comment": "One of our MERN project was done by Abubakar. His attention to detail and ability to solve problems quickly were impressive. The final product was according to my expectations. Also, his communication was top-notch throughout the process. Highly recommend for any development work! (Freelancer - 2023)"
+        },
+        {
+            "name": "M. Faizan",
+            "pic": "testimonials/faizan.png",
+            "comment": "Abubakar worked with us during an internship here at NADRA. He worked on a portal during his internship. He used to work on daily basis and he used to complete his tasks daily. His work quality was really good and not only me but whole of the team here was really impressed with him. We do recommend him for other opportunities as well. (M. Faizan (NADRA) -2023)"
+        }
     ],
-    "contact":{
-        "email":"ajaved.bese21seecs@seecs.edu.pk",
-        "whatsapp":"+923095322507"
+    "contact": {
+        "email": "ajaved.bese21seecs@seecs.edu.pk",
+        "whatsapp": "+923095322507"
     },
-    "footer":{
-        "githubLink":"https://github.com/abubakar-javed",
-        "linkedInLink":"https://www.linkedin.com/in/abubakar-javed-a05676236/",
-        "facebookLink":"https://www.facebook.com/abubakar.qureshi.338/",
-        "instagramLink":"https://www.instagram.com/abubakar_.jani/",
-        "twitterLink":"https://twitter.com/jani_vocals"
+    "footer": {
+        "githubLink": "https://github.com/abubakar-javed",
+        "linkedInLink": "https://www.linkedin.com/in/abubakar-javed-a05676236/",
+        "facebookLink": "https://www.facebook.com/abubakar.qureshi.338/",
+        "instagramLink": "https://www.instagram.com/abubakar_.jani/",
+        "twitterLink": "https://twitter.com/jani_vocals"
     }
 }
-
-
-
-
