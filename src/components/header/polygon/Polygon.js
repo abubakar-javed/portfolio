@@ -10,7 +10,7 @@ const Polygon = ({ rotation, initialAngle }) => {
       setCurrentAngle((prevAngle) => {
         return prevAngle === initialAngle ? rotation : initialAngle;
       });
-    }, 3000); 
+    }, 7000); 
 
     return () => clearInterval(interval);
   }, [rotation, initialAngle]);
@@ -25,7 +25,7 @@ const Polygon = ({ rotation, initialAngle }) => {
       <img
         className={classes.polygon}
         alt="Polygon"
-        src="polygon.svg"
+        src="basic/polygon.svg"
         style={style}
       />
     </div>

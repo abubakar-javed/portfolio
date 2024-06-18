@@ -5,10 +5,11 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { useState, useEffect } from "react";
 const PROJECTS = [
-    { img: "photogallery.jpeg", title: "PhotoGallery (Microservices)", github_link: "https://github.com/abubakar-javed/Microservices_photoGallery", demo_link: "https://github.com/abubakar-javed" },
-    { img: "portfolio.jpg", title: "Portfolio App", github_link: "https://github.com/abubakar-javed/portfolio", demo_link: "https://github.com/abubakar-javed" },
-    { img: "photogallery.jpeg", title: "PhotoGallery (Microservices)", github_link: "https://github.com/abubakar-javed/Microservices_photoGallery", demo_link: "https://github.com/abubakar-javed" },
-    { img: "portfolio.jpg", title: "Portfolio App", github_link: "https://github.com/abubakar-javed/portfolio", demo_link: "https://github.com/abubakar-javed" },
+    { img: "projects/photogallery.jpeg", title: "PhotoGallery (Microservices)", github_link: "https://github.com/abubakar-javed/Microservices_photoGallery", demo_link: "https://github.com/abubakar-javed" },
+    { img: "projects/portfolio.jpg", title: "Portfolio App", github_link: "https://github.com/abubakar-javed/portfolio", demo_link: "https://github.com/abubakar-javed" },
+    { img: "projects/easycoach.jpg", title: "EasyCoach", github_link: "https://github.com/emaanumer/EasyCoach", demo_link: "https://github.com/abubakar-javed" },
+    { img: "projects/jinxed.png", title: "Jinxed Sorcerers (Game)", github_link: "https://github.com/Arch-Frost/Jinxed-Sorcerers", demo_link: "https://github.com/abubakar-javed" },
+    { img: "projects/adoptease.jpg", title: "Adopt Ease", github_link: "https://github.com/emaanumer012/AdoptEase", demo_link: "https://github.com/abubakar-javed" },
 ]
 const Projects = (props) => {
     const [projects, setProjects] = useState(PROJECTS);
@@ -47,7 +48,7 @@ const Projects = (props) => {
                     </div>
                     <div className="d-block d-md-none">
                         <Carousel
-                            showArrows={false} showThumbs={true} infiniteLoop={true} showStatus={false}
+                            showArrows={false} infiniteLoop={true}  showThumbs={false} showStatus={false}
                         >
                             {projects.map((element, index) => (
                                 <div key={index}>

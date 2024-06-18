@@ -84,7 +84,7 @@ const Contact = (props) => {
                         <span onMouseEnter={() => handleHover(1)}
                             onMouseLeave={() => handleLeave()}>
                             <Box style={hoveredBox === 1 ? { ...boxStyle1, boxShadow: "0px 0px 40px rgba(186, 10, 10, 0.804)", border: "1px solid white" } : boxStyle1}>
-                                <img className={classes.contactImage} src="email_icon.svg" height="40rem" width="40rem"></img>
+                                <img className={classes.contactImage} src="contact/email_icon.svg" height="40rem" width="40rem"></img>
                                 <hr className={classes.boxLine}></hr>
                                 <p className={classes.contactTitle} style={contactTitleStyle}>Email</p>
                                 <p className={classes.contactDetail} style={contactDetailStyle}>{contact.email}</p>
@@ -96,7 +96,7 @@ const Contact = (props) => {
                         <span onMouseEnter={() => handleHover(2)}
                             onMouseLeave={() => handleLeave()}>
                             <Box style={hoveredBox === 2 ? { ...boxStyle2, boxShadow: "0px 0px 40px rgba(186, 10, 10, 0.804)", border: "1px solid white" } : boxStyle2}>
-                                <img className={classes.contactImageWhatsapp} src="whatsapp_icon.svg" height="35rem" width="35rem"></img>
+                                <img className={classes.contactImageWhatsapp} src="contact/whatsapp_icon.svg" height="35rem" width="35rem"></img>
                                 <hr className={classes.boxLine}></hr>
                                 <p className={classes.contactTitle} style={contactTitleStyleWhatsapp}>Whatsapp</p>
                                 <p className={classes.contactDetail} style={contactDetailStyleWhatsapp}>{contact.whatsapp}</p>

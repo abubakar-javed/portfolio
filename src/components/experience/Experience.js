@@ -36,15 +36,21 @@ const Tools = [
 
 const Experience = (props) => {
     const [langDB, setLangDB] = useState(LanguagesAndDBs);
+    const [langDBP1, setLangDBP1] = useState(LanguagesAndDBs_p1);
+    const [langDBP2, setLangDBP2] = useState(LanguagesAndDBs_p2);
     const [frameworks, setFrameworks] = useState(Frameworks);
     const [tools, setTools] = useState(Tools);
     useEffect(()=>{
       if (props.ProfileData && props.ProfileData[0]?.experience?.languagesAndDbs) {
         setLangDB(props.ProfileData[0].experience.languagesAndDbs);
+        setLangDBP1(props.ProfileData[0].experience.LanguagesAndDBs_p1)
+        setLangDBP2(props.ProfileData[0].experience.LanguagesAndDBs_p2)
         setFrameworks(props.ProfileData[0].experience.frameworks);
         setTools(props.ProfileData[0].experience.tools);
       } else {
         setLangDB(LanguagesAndDBs); 
+        setLangDBP1(LanguagesAndDBs_p1);
+        setLangDBP2(LanguagesAndDBs_p2);
         setFrameworks(Frameworks); 
         setTools(Tools); 
       }
@@ -92,7 +98,7 @@ const Experience = (props) => {
                 <span className={classes.expElement} key={index}>
                     <div className="row">
                         <div className="col-3 mt-1">
-                            <img src="check.svg" height="20rem" width="20rem" className={classes.boxIcon}></img>
+                            <img src="experience/check.svg" height="20rem" width="20rem" className={classes.boxIcon}></img>
                         </div>
                         <div className="col-7">
                             <span className={classes.ExpTitle}>{element.title}</span>
@@ -113,11 +119,11 @@ const Experience = (props) => {
         <span>
             <div className={`${classes.boxTitle}`}>Languages</div>
             <hr className={classes.boxLine}></hr>
-            {LanguagesAndDBs_p1.map((element, index) => (
+            {langDBP1.map((element, index) => (
                 <span className={classes.expElement} key={index}>
                     <div className="row">
                         <div className="col-3 mt-1">
-                            <img src="check.svg" height="20rem" width="20rem" className={classes.boxIcon}></img>
+                            <img src="experience/check.svg" height="20rem" width="20rem" className={classes.boxIcon}></img>
                         </div>
                         <div className="col-7">
                             <span className={classes.ExpTitle}>{element.title}</span>
@@ -138,11 +144,11 @@ const Experience = (props) => {
         <span>
             <div className={`${classes.boxTitle}`}>Languages and DBs</div>
             <hr className={classes.boxLine}></hr>
-            {LanguagesAndDBs_p2.map((element, index) => (
+            {langDBP2.map((element, index) => (
                 <span className={classes.expElement} key={index}>
                     <div className="row">
                         <div className="col-3 mt-1">
-                            <img src="check.svg" height="20rem" width="20rem" className={classes.boxIcon}></img>
+                            <img src="experience/check.svg" height="20rem" width="20rem" className={classes.boxIcon}></img>
                         </div>
                         <div className="col-7">
                             <span className={classes.ExpTitle}>{element.title}</span>
@@ -167,14 +173,14 @@ const Experience = (props) => {
                 <span className={classes.expElement} key={index}>
                     <div className="row">
                         <div className="col-2 mt-1">
-                            <img src="check.svg" height="20rem" width="20rem" className={classes.boxIcon}></img>
+                            <img src="experience/check.svg" height="20rem" width="20rem" className={classes.boxIcon}></img>
                         </div>
                         <div className="col-3">
                             <span className={classes.ExpTitle}>{element.title1}</span>
                         </div>
                         <div className="col-1"></div>
                         <div className="col-2 mt-1">
-                            <img src="check.svg" height="20rem" width="20rem" className={classes.boxIcon}></img>
+                            <img src="experience/check.svg" height="20rem" width="20rem" className={classes.boxIcon}></img>
                         </div>
                         <div className="col-3">
                             <span className={classes.ExpTitle}>{element.title2}</span>
@@ -206,7 +212,7 @@ const Experience = (props) => {
                 <span className={classes.expElement} key={index}>
                     <div className="row">
                         <div className="col-3 mt-1">
-                            <img src="check.svg" height="20rem" width="20rem" className={classes.boxIcon}></img>
+                            <img src="experience/check.svg" height="20rem" width="20rem" className={classes.boxIcon}></img>
                         </div>
                         <div className="col-7">
                             <span className={classes.ExpTitle}>{element.title}</span>
@@ -248,7 +254,7 @@ const Experience = (props) => {
                 </div>
             </div>
             <div className="d-block d-md-none">
-                <Carousel showArrows={false} showThumbs={true} infiniteLoop={true} showStatus={false}>
+                <Carousel showArrows={false} showThumbs={false} infiniteLoop={true} showStatus={false}>
                     <div>
                         <Box style={boxStyle1}>
                             {box1Content}

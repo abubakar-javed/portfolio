@@ -4,21 +4,21 @@ import classes from "./Testimonials.module.css";
 import Button from '../UI/Button/Button';
 
 const TESTIMONIALS = [
-    { name: "Tin Shaw", pic: "test1.jpg", comment: "We have been very happy with our new website! It looks professional and very easy to navigate. Our experience with Mohad and his team has been great. They handle things very efficiently and are available for any questions we have. They also keep us updated on monthly reports so we know how our site is doing. I would recommend them to anyone looking for website design or SEO work! (Fiver -2020)" },
-    { name: "Shatta Wale", pic: "test2.jpg", comment: "My new website is everything that I wanted.You are much better than other people I have hired so far. What I loved about you was the fact that you started with a plan and executed it. You were also very easy to communicate with and were able to work from concepts rather than needing me to design the website myself. (Upwork -2021)" },
-    { name: "Kwame Despite", pic: "test3.jpg", comment: "It has been a pleasure working with you. I appreciate your dedication to the projects that you and your team are on. It is nice from the customers stand point to be able to get in touch with you and your team and you guys always made yourselves available. You did a great job for us and I would recommend you to anyone. (Fiver -2021)" },
+    { name: "Shela M.", pic: "testimonials/shela.png", comment: "I had a project based on Express Js and React, which also included working on UI design as well. I am very satisfied with Abubakar. He not only timely delivered but the quality of the work was at top. I would really recommend him, for all kinds of project. He has really good working ability and he readily adopted to the docs i shared with him and produced the work which was even better. (Freelancer -2023)" },
+    { name: "Warren", pic: "testimonials/warren.jpg", comment: "One of our MERN project was done by Abubakar. His attention to detail and ability to solve problems quickly were impressive. The final product was according to my expectations. Also, his communication was top-notch throughout the process. Highly recommend for any development work! (Freelancer - 2023)" },
+    { name: "M. Faizan", pic: "testimonials/faizan.png", comment: "Abubakar worked with us during an internship here at NADRA. He worked on a portal during his internship. He used to work on daily basis and he used to complete his tasks daily. His work quality was really good and not only me but whole of the team here was really impressed with him. We do recommend him for other opportunities as well. (M. Faizan (NADRA) -2023)" },
 ];
 
 const Testimonials = (props) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [testimonials, setTestimonials] = useState(TESTIMONIALS);
-    useEffect(() => {
-        if (props.ProfileData && props.ProfileData[0]?.testimonials) {
-            setTestimonials(props.ProfileData[0].testimonials);
-        } else {
-            setTestimonials(TESTIMONIALS);
-        }
-    }, [props.ProfileData])
+    // useEffect(() => {
+    //     if (props.ProfileData && props.ProfileData[0]?.testimonials) {
+    //         setTestimonials(props.ProfileData[0].testimonials);
+    //     } else {
+    //         setTestimonials(TESTIMONIALS);
+    //     }
+    // }, [props.ProfileData])
 
 
     const [boxStyle, setBoxStyle] = useState({ height: "29rem", width: "27rem", textAlign: "center", overflow: 'hidden', marginLeft: "auto", marginRight: "auto",padding:"0"});
