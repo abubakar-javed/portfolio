@@ -31,8 +31,7 @@
  padding: 0;
 }
 
-@media (min-width:500px){ 
-    .box_num_1,.box_num_1,.box_num_1{
-      
-    }
+.carousel_box{
+    padding-left: 2.3rem;
+    padding-right: 2.3rem;
 }
