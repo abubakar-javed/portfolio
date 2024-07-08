@@ -6,14 +6,9 @@ const CONTACT = {
     "email": "ajaved.bese21seecs@seecs.edu.pk",
     "whatsapp": "+923095322507"
 }
-const Contact = (props) => {
+const Contact = () => {
     const [hoveredBox, setHoveredBox] = useState(null);
-    const [contact, setContact] = useState(CONTACT)
-    useEffect(() => {
-        if (props.ProfileData && props.ProfileData[0]?.contact) {
-            setContact(props.ProfileData[0].contact);
-        }
-    }, [props.ProfileData])
+    
     const buttonStyle = { width: "11rem", padding: "0.5rem 1.5rem", borderRadius: "10px", fontWeight: "300", fontSize: "medium",marginLeft:"0" }
     const [boxStyle1, setBoxStyle1] = useState({height: "14rem",width: "16rem",border: "1px solid rgb(146, 94, 94)",transition: "background-color 0.3s",textAlign: "center",paddingTop: "1rem",marginLeft:"auto",marginRight:"auto",marginBottom:"2rem"});
     const [boxStyle2, setBoxStyle2] = useState({height: "14rem",width: "16rem",border: "1px solid rgb(146, 94, 94)",transition: "background-color 0.3s",textAlign: "center",paddingTop: "1.1rem",marginLeft:"auto",marginRight:"auto"});
@@ -65,12 +60,11 @@ const Contact = (props) => {
         setHoveredBox(null);
     };
     const openEmail = () => {
-        window.location.href = `mailto:${contact.email}`;
+        window.location.href = `mailto:${CONTACT.email}`;
     };
 
     const openWhatsapp = () => {
-        console.log(`https://wa.me/${contact.whatsapp}`)
-        window.open(`https://wa.me/${contact.whatsapp}`, '_blank');
+        window.open(`https://wa.me/${CONTACT.whatsapp}`, '_blank');
     };
 
     return (
@@ -85,7 +79,7 @@ const Contact = (props) => {
                                 <img className={classes.contactImage} src="contact/email_icon.svg" height="40rem" width="40rem"></img>
                                 <hr className={classes.boxLine}></hr>
                                 <p className={classes.contactTitle} style={contactTitleStyle}>Email</p>
-                                <p className={classes.contactDetail} style={contactDetailStyle}>{contact.email}</p>
+                                <p className={classes.contactDetail} style={contactDetailStyle}>{CONTACT.email}</p>
                                 <Button alt className={classes.contactButton} styles={buttonStyle} onClick={openEmail}>Send Email</Button>
                             </Box>
                         </span>
@@ -97,7 +91,7 @@ const Contact = (props) => {
                                 <img className={classes.contactImageWhatsapp} src="contact/whatsapp_icon.svg" height="35rem" width="35rem"></img>
                                 <hr className={classes.boxLine}></hr>
                                 <p className={classes.contactTitle} style={contactTitleStyleWhatsapp}>Whatsapp</p>
-                                <p className={classes.contactDetail} style={contactDetailStyleWhatsapp}>{contact.whatsapp}</p>
+                                <p className={classes.contactDetail} style={contactDetailStyleWhatsapp}>{CONTACT.whatsapp}</p>
                                 <Button alt className={classes.contactButton} styles={buttonStyle} onClick={openWhatsapp}>Send Message</Button>
                             </Box>
                         </span>

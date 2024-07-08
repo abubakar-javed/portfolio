@@ -1,5 +1,4 @@
 import classes from "./Footer.module.css"
-import { useState,useEffect } from "react"
 const FOOTER = {
     githubLink: "https://github.com/abubakar-javed",
     linkedInLink: "https://www.linkedin.com/in/abubakar-javed-a05676236/",
@@ -8,13 +7,8 @@ const FOOTER = {
     twitterLink: "https://twitter.com/jani_vocals"
 }
 
-const Footer = (props) => {
-    const [footer, setFooter] = useState(FOOTER)
-    useEffect(() => {
-        if (props.ProfileData && props.ProfileData[0]?.footer) {
-            setFooter(props.ProfileData[0].footer);
-        }
-    }, [props.ProfileData])
+const Footer = () => {
+    
     return (
         <>
             <div className={classes.footer}>
@@ -29,11 +23,11 @@ const Footer = (props) => {
                     <li><a className={classes.footerNavigationItem} href="#contactHeading">Contact</a></li>
                 </ul>
                 <div className={classes.footerLinks}>
-                    <a href={footer.githubLink} target="_blank" ><img className={`${classes.githubLinkLogo} ${classes.footerLinkLogo}`} src="footer/github_logo.svg" height="35rem" width="35rem"></img></a>
-                    <a href={footer.linkedInLink} target="_blank" ><img className={`${classes.linkedInLinkLogo} ${classes.footerLinkLogo}`} src="footer/linkedin_logo.svg" height="35rem" width="35rem"></img></a>
-                    <a href={footer.facebookLink} target="_blank" ><img className={`${classes.facebookLinkLogo} ${classes.footerLinkLogo}`} src="footer/facebook_logo.svg" height="35rem" width="35rem"></img></a>
-                    <a href={footer.instagramLink} target="_blank" ><img className={`${classes.instagramLinkLogo} ${classes.footerLinkLogo}`} src="footer/instagram_logo.svg" height="35rem" width="35rem"></img></a>
-                    <a href={footer.twitterLink} target="_blank" ><img className={`${classes.twitterLinkLogo} ${classes.footerLinkLogo}`} src="footer/twitter_logo.svg" height="35rem" width="35rem"></img></a>
+                    <a href={FOOTER.githubLink} target="_blank" ><img className={`${classes.githubLinkLogo} ${classes.footerLinkLogo}`} src="footer/github_logo.svg" height="35rem" width="35rem"></img></a>
+                    <a href={FOOTER.linkedInLink} target="_blank" ><img className={`${classes.linkedInLinkLogo} ${classes.footerLinkLogo}`} src="footer/linkedin_logo.svg" height="35rem" width="35rem"></img></a>
+                    <a href={FOOTER.facebookLink} target="_blank" ><img className={`${classes.facebookLinkLogo} ${classes.footerLinkLogo}`} src="footer/facebook_logo.svg" height="35rem" width="35rem"></img></a>
+                    <a href={FOOTER.instagramLink} target="_blank" ><img className={`${classes.instagramLinkLogo} ${classes.footerLinkLogo}`} src="footer/instagram_logo.svg" height="35rem" width="35rem"></img></a>
+                    <a href={FOOTER.twitterLink} target="_blank" ><img className={`${classes.twitterLinkLogo} ${classes.footerLinkLogo}`} src="footer/twitter_logo.svg" height="35rem" width="35rem"></img></a>
                 </div>
                 <div className={classes.rightsSection}>
                     <p className={classes.rightsLine}>&#169;Abubakar Javed. All rights reserved.</p>

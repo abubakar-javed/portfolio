@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, memo } from "react";
 import PropTypes from "prop-types";
 import classes from "./Polygon.module.css";
 
@@ -6,13 +6,12 @@ const Polygon = ({ rotation, initialAngle }) => {
   const [currentAngle, setCurrentAngle] = useState(initialAngle);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentAngle((prevAngle) => {
-        return prevAngle === initialAngle ? rotation : initialAngle;
-      });
-    }, 7000); 
-
-    return () => clearInterval(interval);
+    const animate = () => {
+      setCurrentAngle((prevAngle) => prevAngle === initialAngle ? rotation : initialAngle);
+    };
+    
+    const intervalId = setInterval(animate, 7000);
+    return () => clearInterval(intervalId);
   }, [rotation, initialAngle]);
 
   const style = {
@@ -37,4 +36,4 @@ Polygon.propTypes = {
   initialAngle: PropTypes.number.isRequired,
 };
 
-export default Polygon;
+export default memo(Polygon);

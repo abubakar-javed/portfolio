@@ -116,8 +116,7 @@ const SKILLS = [
     },
   },
 ];
-const Skills = (props) => {
-  const [skills, setSkills] = useState({ skillsDetails: SKILLS, experience: "2+", projects: "10+" });
+const Skills = () => {
   const [boxStyle, setBoxStyle] = useState({  height: "8rem", width: "6.5rem", textAlign: "center" });
 
   useEffect(() => {
@@ -144,11 +143,7 @@ const Skills = (props) => {
   }, []);
 
 
-  useEffect(() => {
-    if (props.ProfileData && props.ProfileData[0]?.skills) {
-      setSkills(props.ProfileData[0].skills);
-    } 
-  }, [props.ProfileData])
+  
 
   return (
     <>
@@ -157,7 +152,7 @@ const Skills = (props) => {
         <div className="row">
           <div className="col-md-6 col-lg-6 col-12 col-xl-5 mb-5 mb-md-0">
             <div className={`${classes.cards} mt-5`}>
-              {skills.skillsDetails ? skills.skillsDetails.map((element, key) => (
+              {SKILLS.skillsDetails ? SKILLS.skillsDetails.map((element, key) => (
                 <Skill key={key} element={element} style={element.style} />
               )) : SKILLS.map((element, key) => (
                 <Skill key={key} element={element} style={element.style} />
@@ -173,7 +168,7 @@ const Skills = (props) => {
                   <img src="skills/experience.svg" height="50rem" width="30rem" className={classes.boxIcon}></img>
                   <span className={classes.boxTitle}>Experience</span>
                   <hr className={classes.boxLine}></hr>
-                  <span className={classes.boxDesc}>{skills.experience ? skills.experience : "2+"} Years</span>
+                  <span className={classes.boxDesc}>{SKILLS.experience ? SKILLS.experience : "2+"} Years</span>
                 </Box>
               </div>
               <div className="col-4 col-md-5 col-lg-4">
@@ -181,14 +176,14 @@ const Skills = (props) => {
                   <img src="skills/projects.svg" height="50rem" width="30rem" className={classes.boxIcon}></img>
                   <span className={classes.boxTitle2}>Projects</span>
                   <hr className={classes.boxLine}></hr>
-                  <span className={classes.boxDesc2}>{skills.projects ? skills.projects : "20+"} Projects</span>
+                  <span className={classes.boxDesc2}>{SKILLS.projects ? SKILLS.projects : "20+"} Projects</span>
                 </Box>
               </div>
 
 
             </div>
             <div className="row ml-md-3" style={{ marginTop: "2rem" }}>
-              {skills.description ? skills.description : "Looking to digitize your business? Here i am! and you're at the right place. Having experiences on both frontend and backend technologies, I can help you achieve your goals in best possible way. Ready to discuss? Head to the contact section below!!"}</div>
+              {SKILLS.description ? SKILLS.description : "Looking to digitize your business? Here i am! and you're at the right place. Having experiences on both frontend and backend technologies, I can help you achieve your goals in best possible way. Ready to discuss? Head to the contact section below!!"}</div>
           </div>
         </div>
       </div>
