@@ -3,7 +3,6 @@ import Box from "../UI/Box/Box";
 import Button from "../UI/Button/Button";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import { useState, useEffect } from "react";
 const PROJECTS = [
     { img: "projects/photogallery.jpeg", title: "PhotoGallery (Microservices)", github_link: "https://github.com/abubakar-javed/Microservices_photoGallery", demo_link: "https://github.com/abubakar-javed" },
     { img: "projects/portfolio.jpg", title: "Portfolio App", github_link: "https://github.com/abubakar-javed/portfolio", demo_link: "https://github.com/abubakar-javed" },
@@ -11,16 +10,7 @@ const PROJECTS = [
     { img: "projects/jinxed.png", title: "Jinxed Sorcerers (Game)", github_link: "https://github.com/Arch-Frost/Jinxed-Sorcerers", demo_link: "https://github.com/abubakar-javed" },
     { img: "projects/adoptease.jpg", title: "Adopt Ease", github_link: "https://github.com/emaanumer012/AdoptEase", demo_link: "https://github.com/abubakar-javed" },
 ]
-const Projects = (props) => {
-    const [projects, setProjects] = useState(PROJECTS);
-    useEffect(() => {
-        if (props.ProfileData && props.ProfileData[0]?.projects) {
-            setProjects(props.ProfileData[0].projects);
-        }
-    }, [props.ProfileData])
-
-
-
+const Projects = () => {
     const buttonStyle = { width: "auto", padding: "0.5rem 1.5rem", borderRadius: "10px", fontWeight: "300", fontSize: "medium" ,marginLeft:"0rem"}
     const boxStyle1 = { height: "20rem", width: "18rem", textAlign: "center",marginLeft:"auto",marginRight:"auto",marginBottom:"3rem" };
     const imageStyle = { height: "10rem", width: "15rem", marginTop: "1rem", borderRadius: "2rem" }
@@ -33,7 +23,7 @@ const Projects = (props) => {
             <div className="container">
                 <div className="row text-center">
                     <div className="row d-none d-md-flex">
-                        {projects.map((element, index) => (
+                        {PROJECTS.map((element, index) => (
                             <div className="col-6 col-md-6 col-lg-4 mb-5 p-0" key={index}>
                                 <Box style={boxStyle1}>
                                     <img src={`${element.img}`} style={imageStyle} alt={element.title} />
@@ -48,7 +38,7 @@ const Projects = (props) => {
                         <Carousel
                             showArrows={false} infiniteLoop={true}  showThumbs={false} showStatus={false}
                         >
-                            {projects.map((element, index) => (
+                            {PROJECTS.map((element, index) => (
                                 <div key={index}>
                                     <Box style={boxStyle1}>
                                         <img src={`${element.img}`} style={imageStyle} alt={element.title} />

@@ -9,14 +9,9 @@ const TESTIMONIALS = [
     { name: "M. Faizan", pic: "testimonials/faizan.png", comment: "Abubakar worked with us during an internship here at NADRA. He worked on a portal during his internship. He used to work on daily basis and he used to complete his tasks daily. His work quality was really good and not only me but whole of the team here was really impressed with him. We do recommend him for other opportunities as well. (M. Faizan (NADRA) -2023)" },
 ];
 
-const Testimonials = (props) => {
+const Testimonials = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [testimonials, setTestimonials] = useState(TESTIMONIALS);
-    useEffect(() => {
-        if (props.ProfileData && props.ProfileData[0]?.testimonials) {
-            setTestimonials(props.ProfileData[0].testimonials);
-        } 
-    }, [props.ProfileData])
+    
 
 
     const [boxStyle, setBoxStyle] = useState({ height: "29rem", width: "27rem", textAlign: "center", overflow: 'hidden', marginLeft: "auto", marginRight: "auto",padding:"0"});
@@ -47,18 +42,18 @@ const Testimonials = (props) => {
       }, []);
     useEffect(() => {
         const timerId = setTimeout(() => {
-            setCurrentIndex((prevIndex) => (prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1));
+            setCurrentIndex((prevIndex) => (prevIndex === TESTIMONIALS.length - 1 ? 0 : prevIndex + 1));
         }, 5000);
 
         return () => clearTimeout(timerId);
-    }, [currentIndex, testimonials.length]);
+    }, [currentIndex, TESTIMONIALS.length]);
 
     const handleNext = () => {
-        setCurrentIndex((prevIndex) => (prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1));
+        setCurrentIndex((prevIndex) => (prevIndex === TESTIMONIALS.length - 1 ? 0 : prevIndex + 1));
     };
 
     const handlePrev = () => {
-        setCurrentIndex((prevIndex) => (prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1));
+        setCurrentIndex((prevIndex) => (prevIndex === 0 ? TESTIMONIALS.length - 1 : prevIndex - 1));
     };
 
     return (
@@ -71,7 +66,7 @@ const Testimonials = (props) => {
                             &#8592;
                         </Button></div>
                     <div className={`col-10 col-md-8 col-xl-6 col-xxl-4`}>
-                        {testimonials.map((element, index) => (
+                        {TESTIMONIALS.map((element, index) => (
                             <div
                                 key={index}
                                 className={`${classes.carousel_item} carousel-item  ${currentIndex === index ? 'active' : ''}`}

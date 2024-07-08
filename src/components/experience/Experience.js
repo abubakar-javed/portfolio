@@ -34,21 +34,7 @@ const Tools = [
     { title: "Jira", level: "Intermediate" },
 ]
 
-const Experience = (props) => {
-    const [langDB, setLangDB] = useState(LanguagesAndDBs);
-    const [langDBP1, setLangDBP1] = useState(LanguagesAndDBs_p1);
-    const [langDBP2, setLangDBP2] = useState(LanguagesAndDBs_p2);
-    const [frameworks, setFrameworks] = useState(Frameworks);
-    const [tools, setTools] = useState(Tools);
-    useEffect(()=>{
-      if (props.ProfileData && props.ProfileData[0]?.experience?.languagesAndDbs) {
-        setLangDB(props.ProfileData[0].experience.languagesAndDbs);
-        setLangDBP1(props.ProfileData[0].experience.LanguagesAndDBs_p1)
-        setLangDBP2(props.ProfileData[0].experience.LanguagesAndDBs_p2)
-        setFrameworks(props.ProfileData[0].experience.frameworks);
-        setTools(props.ProfileData[0].experience.tools);
-      } 
-    },[props.ProfileData])
+const Experience = () => {
 
 
     const [boxStyle1, setBoxStyle1] = useState({ height: "25rem", width: "16rem",marginLeft:"auto",marginRight:"auto",marginBottom:"3rem"});
@@ -88,7 +74,7 @@ const Experience = (props) => {
         <span>
             <div className={`${classes.boxTitle}`}>Frameworks</div>
             <hr className={classes.boxLine}></hr>
-            {frameworks.map((element, index) => (
+            {Frameworks.map((element, index) => (
                 <span className={classes.expElement} key={index}>
                     <div className="row">
                         <div className="col-3 mt-1">
@@ -113,7 +99,7 @@ const Experience = (props) => {
         <span>
             <div className={`${classes.boxTitle}`}>Languages</div>
             <hr className={classes.boxLine}></hr>
-            {langDBP1.map((element, index) => (
+            {LanguagesAndDBs_p1.map((element, index) => (
                 <span className={classes.expElement} key={index}>
                     <div className="row">
                         <div className="col-3 mt-1">
@@ -138,7 +124,7 @@ const Experience = (props) => {
         <span>
             <div className={`${classes.boxTitle}`}>Languages and DBs</div>
             <hr className={classes.boxLine}></hr>
-            {langDBP2.map((element, index) => (
+            {LanguagesAndDBs_p2.map((element, index) => (
                 <span className={classes.expElement} key={index}>
                     <div className="row">
                         <div className="col-3 mt-1">
@@ -163,7 +149,7 @@ const Experience = (props) => {
         <span>
             <div className={`${classes.boxTitle}`}>Languages and DBs</div>
             <hr className={classes.boxLine}></hr>
-            {langDB.map((element, index) => (
+            {LanguagesAndDBs.map((element, index) => (
                 <span className={classes.expElement} key={index}>
                     <div className="row">
                         <div className="col-2 mt-1">
@@ -202,7 +188,7 @@ const Experience = (props) => {
         <span>
             <div className={`${classes.boxTitle}`}>Tools</div>
             <hr className={classes.boxLine}></hr>
-            {tools.map((element, index) => (
+            {Tools.map((element, index) => (
                 <span className={classes.expElement} key={index}>
                     <div className="row">
                         <div className="col-3 mt-1">
