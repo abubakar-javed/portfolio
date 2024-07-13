@@ -78,7 +78,7 @@ const Experience = () => {
                 <span className={classes.expElement} key={index}>
                     <div className="row">
                         <div className="col-3 mt-1">
-                            <img src="experience/check.svg" height="20rem" width="20rem" className={classes.boxIcon}></img>
+                            <img src="experience/check.svg" height="25rem" width="25rem" className={classes.boxIcon}></img>
                         </div>
                         <div className="col-7">
                             <span className={classes.ExpTitle}>{element.title}</span>
@@ -103,7 +103,7 @@ const Experience = () => {
                 <span className={classes.expElement} key={index}>
                     <div className="row">
                         <div className="col-3 mt-1">
-                            <img src="experience/check.svg" height="20rem" width="20rem" className={classes.boxIcon}></img>
+                            <img src="experience/check.svg" height="25rem" width="25rem" className={classes.boxIcon}></img>
                         </div>
                         <div className="col-7">
                             <span className={classes.ExpTitle}>{element.title}</span>
@@ -128,7 +128,7 @@ const Experience = () => {
                 <span className={classes.expElement} key={index}>
                     <div className="row">
                         <div className="col-3 mt-1">
-                            <img src="experience/check.svg" height="20rem" width="20rem" className={classes.boxIcon}></img>
+                            <img src="experience/check.svg" height="25rem" width="25rem" className={classes.boxIcon}></img>
                         </div>
                         <div className="col-7">
                             <span className={classes.ExpTitle}>{element.title}</span>
@@ -153,14 +153,14 @@ const Experience = () => {
                 <span className={classes.expElement} key={index}>
                     <div className="row">
                         <div className="col-2 mt-1">
-                            <img src="experience/check.svg" height="20rem" width="20rem" className={classes.boxIcon}></img>
+                            <img src="experience/check.svg" height="25rem" width="25rem" className={classes.boxIcon}></img>
                         </div>
                         <div className="col-3">
                             <span className={classes.ExpTitle}>{element.title1}</span>
                         </div>
                         <div className="col-1"></div>
                         <div className="col-2 mt-1">
-                            <img src="experience/check.svg" height="20rem" width="20rem" className={classes.boxIcon}></img>
+                            <img src="experience/check.svg" height="25rem" width="25rem" className={classes.boxIcon}></img>
                         </div>
                         <div className="col-3">
                             <span className={classes.ExpTitle}>{element.title2}</span>
@@ -192,7 +192,7 @@ const Experience = () => {
                 <span className={classes.expElement} key={index}>
                     <div className="row">
                         <div className="col-3 mt-1">
-                            <img src="experience/check.svg" height="20rem" width="20rem" className={classes.boxIcon}></img>
+                            <img src="experience/check.svg" height="25rem" width="25rem" className={classes.boxIcon}></img>
                         </div>
                         <div className="col-7">
                             <span className={classes.ExpTitle}>{element.title}</span>
