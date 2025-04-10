@@ -4,11 +4,14 @@ import Button from "../UI/Button/Button";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 const PROJECTS = [
+    { img: "projects/tensorark.jpg", title: "Tensorark Website", github_link: "https://github.com/abubakar-javed", demo_link: "https://www.tensorark.com/" },
+    { img: "projects/resume8.jpg", title: "Resume8", github_link: "https://github.com/abubakar-javed", demo_link: "https://auto-apply-delta.vercel.app/" },
     { img: "projects/photogallery.jpeg", title: "PhotoGallery (Microservices)", github_link: "https://github.com/abubakar-javed/Microservices_photoGallery", demo_link: "https://github.com/abubakar-javed" },
     { img: "projects/portfolio.jpg", title: "Portfolio App", github_link: "https://github.com/abubakar-javed/portfolio", demo_link: "https://github.com/abubakar-javed" },
     { img: "projects/coach.jpg", title: "EasyCoach", github_link: "https://github.com/emaanumer/EasyCoach", demo_link: "https://github.com/abubakar-javed" },
     { img: "projects/jinxed.png", title: "Jinxed Sorcerers (Game)", github_link: "https://github.com/Arch-Frost/Jinxed-Sorcerers", demo_link: "https://github.com/abubakar-javed" },
     { img: "projects/adoptease.jpg", title: "Adopt Ease", github_link: "https://github.com/emaanumer012/AdoptEase", demo_link: "https://github.com/abubakar-javed" },
+    { img: "projects/ringnet.jpg", title: "RingNet", github_link: "https://github.com/abubakar-javed", demo_link: "https://ring-net-front.vercel.app/" },
 ]
 const Projects = () => {
     const buttonStyle = { width: "auto", padding: "0.5rem 1.5rem", borderRadius: "10px", fontWeight: "300", fontSize: "medium" ,marginLeft:"0rem"}
